@@ -32,7 +32,7 @@ void ALARMhandler(int sig)
 int oled_main()
 {
     /* Initialize I2C bus and connect to the I2C Device */
-    if(init_i2c_dev(I2C_DEV2_PATH, SSD1306_OLED_ADDR) == 0)
+    if(init_i2c_dev(I2C_DEV1_PATH, SSD1306_OLED_ADDR) == 0)
     {
         printf("(Main)i2c-2: Bus Connected to SSD1306\r\n");
     }
